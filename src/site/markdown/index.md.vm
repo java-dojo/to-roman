@@ -1,0 +1,70 @@
+# Task
+
+Your task is to implement the method `toRoman` in the class `ToRoman`.
+
+# Specification
+
+Convert the given `value` in the method `toRoman` into a Roman numeral.
+
+The `value` must be converted as long as it is between `1` and `3999`. Values
+outside this limits may cause an `IllegalArgumentException`.
+
+The result may only contain the upper case characters `M`, `D`, `C`, `L`, `X`,
+`V`, `I` \[[Wikipedia][wprn]\].
+
+The characters have the following values:
+
+* `I <- 1`
+* `V <- 5`
+* `X <- 10`
+* `L <- 50`
+* `C <- 100`
+* `D <- 500`
+* `M <- 1000`
+
+The characters are interpreted in an additive order. The characters `CCLXXI` are
+representing the value `271`.
+
+The only exceptions to the additive order are that
+
+* the character `I` may appear before `V` or `X` and is subtracted then.
+* the character `X` may appear before `L` or `C` and is subtracted then.
+* the character `C` may appear before `D` or `M` and is subtracted then.
+
+This means that e.g `IX` is interpreted as `9` and `CD` is interpreted as `400`.
+
+# Examples
+
+Some examples of conversions:
+
+* `1 -> I`
+* `4 -> IV`
+* `9 -> IX`
+* `49 -> XLIX`
+* `99 -> XCIX`
+* `999 -> CMXCIX`
+* `1999 -> MCMXCIX`
+* `2015 -> MMXV`
+
+# Support
+
+To support you with implementing the method there are unit tests in
+`ToRomanTest`. The unit tests are disabled at the start. To use them you have to
+enable them.
+
+# Further Challenges
+
+The reverse exercise can be found in [From Roman][fr].
+
+# Development Requirements
+
+  To perform this exercise you need a JDK 8 and Maven 3.3.x.
+
+# References
+
+* [Rosetta Code][rctr]
+* [Wikipedia][wprn]
+
+[fr]: https://java-dojo.github.io/from-roman/ "From Roman"
+[rctr]: http://rosettacode.org/wiki/Roman_numerals/Encode "Rosetta Code - Roman numerals/Encode"
+[wprn]: https://en.wikipedia.org/wiki/Roman_numerals "Wikipedia - Roman numerals"
