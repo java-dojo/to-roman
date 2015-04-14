@@ -22,8 +22,8 @@ The characters have the following values:
 * `D <- 500`
 * `M <- 1000`
 
-The characters are interpreted in an additive order. The characters `CCLXXI` are
-representing the value `271`.
+The characters are interpreted in an additive order. The value `271` is
+represented by the characters `CCLXXI`.
 
 The only exceptions to the additive order are that
 
